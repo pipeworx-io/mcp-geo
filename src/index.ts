@@ -1,14 +1,3 @@
-/**
- * Geo MCP — geographic utilities from free public APIs
- *
- * Tools:
- * - geocode: address -> coordinates (Nominatim)
- * - reverse_geocode: coordinates -> address (Nominatim)
- * - get_country: country info (REST Countries)
- * - get_timezone: timezone for coordinates (WorldTime API)
- * - get_sunrise_sunset: sun times for coordinates (Sunrise-Sunset API)
- */
-
 interface McpToolDefinition {
   name: string;
   description: string;
@@ -23,6 +12,18 @@ interface McpToolExport {
   tools: McpToolDefinition[];
   callTool: (name: string, args: Record<string, unknown>) => Promise<unknown>;
 }
+
+/**
+ * Geo MCP — geographic utilities from free public APIs
+ *
+ * Tools:
+ * - geocode: address → coordinates (Nominatim)
+ * - reverse_geocode: coordinates → address (Nominatim)
+ * - get_country: country info (REST Countries)
+ * - get_timezone: timezone for coordinates (WorldTime API)
+ * - get_sunrise_sunset: sun times for coordinates (Sunrise-Sunset API)
+ */
+
 
 const tools: McpToolExport['tools'] = [
   {
