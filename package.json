@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-geo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Geo MCP — geographic utilities from free public APIs",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-geo": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "geo"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-geo"
+    "url": "git+https://github.com/pipeworx-io/mcp-geo.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-f2b53f050b3c907f2bef212eb860eff16f4ab588bf606d92a42bcc160f1b69c3",
+    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
   }
 }
