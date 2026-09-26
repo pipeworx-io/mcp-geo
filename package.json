@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-geo",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Geo MCP — geographic utilities from free public APIs",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-f2b53f050b3c907f2bef212eb860eff16f4ab588bf606d92a42bcc160f1b69c3",
-    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
+    "sourceHash": "v1-ac4d790cd6eefa483b49b820e4b6d3cdfacd9c44c8fe960989c5f4fb59e0f802",
+    "sourceCommit": "91681e9a4a137fa0051d58e32f38c64b6334af5c"
   }
 }
