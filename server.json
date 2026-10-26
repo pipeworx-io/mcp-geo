@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/geo",
   "title": "Geo",
   "description": "Geo MCP — geographic utilities from free public APIs",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "websiteUrl": "https://pipeworx.io/packs/geo",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-geo",
