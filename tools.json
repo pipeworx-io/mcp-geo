@@ -1,0 +1,101 @@
+[
+  {
+    "name": "geocode",
+    "description": "Convert an address or place name to up to 5 matching coordinates via OpenStreetMap Nominatim. Returns latitude, longitude, display_name, and place type for each result.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Address or place name to geocode"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "reverse_geocode",
+    "description": "Convert coordinates to a physical address. Returns street address, city, country, and postal code. Use to identify locations from lat/lng pairs.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "description": "Latitude"
+        },
+        "longitude": {
+          "type": "number",
+          "description": "Longitude"
+        }
+      },
+      "required": [
+        "latitude",
+        "longitude"
+      ]
+    }
+  },
+  {
+    "name": "get_country",
+    "description": "Get country information by name or ISO code (e.g., 'US', 'FR'). Returns capital, population, currency, languages, and neighboring countries. Use for regional context or facts.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "code_or_name": {
+          "type": "string",
+          "description": "Country name or ISO 3166-1 alpha-2/alpha-3 code"
+        }
+      },
+      "required": [
+        "code_or_name"
+      ]
+    }
+  },
+  {
+    "name": "get_timezone",
+    "description": "Look up the IANA timezone name, current local time, and UTC offset (hours) for a given latitude and longitude via TimeAPI.io. Requires coordinates — does not accept city names.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "description": "Latitude"
+        },
+        "longitude": {
+          "type": "number",
+          "description": "Longitude"
+        }
+      },
+      "required": [
+        "latitude",
+        "longitude"
+      ]
+    }
+  },
+  {
+    "name": "get_sunrise_sunset",
+    "description": "Fetch sunrise, sunset, solar noon, civil twilight begin/end, and day length (seconds) for a given latitude/longitude on an optional YYYY-MM-DD date (defaults to today) via the Sunrise-Sunset API.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "description": "Latitude"
+        },
+        "longitude": {
+          "type": "number",
+          "description": "Longitude"
+        },
+        "date": {
+          "type": "string",
+          "description": "Date in YYYY-MM-DD format (default: today)"
+        }
+      },
+      "required": [
+        "latitude",
+        "longitude"
+      ]
+    }
+  }
+]
