@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-geo",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Geo MCP — geographic utilities from free public APIs",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "geo",
     "gatewaySlug": "geo",
-    "sourceHash": "v1-1601df6457512d42140f7814216b172bed413af1774ce8184c2b829b36f9b99b",
-    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
+    "sourceHash": "v1-85589165899513519a21cdaa5fb93558050fa595cc9208a969d049fdf71bca30",
+    "sourceCommit": "030233f6b150a38a44421f88a5fcbad123f0fea8"
   }
 }
